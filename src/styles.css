@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import 'ngx-toastr/toastr';
+@import "./assets/scss/_button.css";
+@import "./assets/scss/_form.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+
+body{
+    font-family: 'Times New Roman', Times, sans-serif;
+    @apply bg-gray-50;
+}

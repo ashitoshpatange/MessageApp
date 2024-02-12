@@ -1,0 +1,38 @@
+<div class="w-2/5">
+  <app-card>
+    <card-title> <h4 class="text-lg font-bold">Login Here</h4> </card-title>
+    <card-body>
+      <form [formGroup]="loginForm" (submit)="onSubmit()">
+        <div class="form-group mb-3">
+          <label for="email" class="form-label">Email Address</label
+          ><span>*</span>
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="form-control"
+            formControlName="email"
+          />
+          @if(loginForm.get('email')?.hasError('required')&&loginForm.get('email')?.touched){<span
+            class="form-error"
+            >Email is required</span
+          >}
+          <br />
+
+          <label for="password" class="form-label">Password</label
+          ><span>*</span>
+          <input
+            type="password"
+            placeholder="Password"
+            class="form-control"
+            formControlName="password"
+          />
+          @if(loginForm.get('password')?.hasError('required')&&loginForm.get('password')?.touched){<span
+            class="form-error"
+            >Password is required</span
+          >}
+        </div>
+        <button type="submit" class="btn btn-blue">Login</button>
+      </form>
+    </card-body>
+  </app-card>
+</div>

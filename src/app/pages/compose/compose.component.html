@@ -1,0 +1,32 @@
+<div class="grid grid-cols-4 gap-6">
+  <div class="">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="col-span-3">
+    <app-card>
+      <card-title>
+        <h4 class="text-lg font-bold">Compose Message</h4>
+      </card-title>
+      <card-body>
+        <form action="">
+          <div class="form-group mb-3">
+            <label for="" class="form-label">To</label><span>*</span>
+            <input type="email" placeholder="To" class="form-control" />
+
+            <label for="" class="form-label">Subject</label><span>*</span>
+            <input type="text" placeholder="Subject" class="form-control" />
+            <label for="" class="form-label">Message</label><span>*</span>
+            <textarea
+              name=""
+              id=""
+              class="form-control"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue">Send Message</button>
+        </form>
+      </card-body>
+    </app-card>
+  </div>
+</div>
